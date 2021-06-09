@@ -1,4 +1,4 @@
-### **Question 01:**
+### Question 01:
 
 Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 1 and 1000 (both included).
 
@@ -876,4 +876,74 @@ def removeDuplicate(li):
 
 li=[12,24,35,24,88,120,155,88,120,155]
 print(removeDuplicate(li))
+```
+
+
+### Question 45:
+
+By using list comprehension, please write a program generate a (2 * 4 * 3) 3D array whose each element is 0.
+
+Solution:
+array = [[ [0 for col in range(2)] for col in range(4)] for row in range(3)]
+print(array)
+```
+
+### Question 46:
+
+You are given a list of tuples and tuples contains two information which are movie name and year of release. You have to find out which movie were release before 2001 year with release year.
+
+Solution:
+movies = [('A', 2000), ('B', 2001), ('C', 1997), ('D', 1987), ('E', 1985), ('F', 2005),
+          ('G', 2004), ('H', 2011), ('I', 1999), ('J', 1991)]
+
+required_movies = [(title, year) for (title, year) in movies if year <= 2000]
+print(required_movies)
+```
+
+### Question 47:
+
+You are given two lists each of them contain distinct integer. One list contain just even numbers and another contain odd numbers. You have to find out all possible pair from this two lists such that no pair contains both elements from same list.
+
+Solution:
+A = [1, 3, 5, 7]
+B = [2, 4, 6, 8]
+
+all_pairs = [(a, b) for a in A for b in B]
+print(all_pairs)
+```
+
+### Question 48:
+
+Find n'th Fibonacci number using recursion.
+
+Solution:
+def fib(n):
+    if n <= 1: return 0
+    elif n == 2: return 1
+    return fib(n - 1) + fib(n - 2)
+
+t = int(input('Enter test case: '))
+while t > 0:
+    n = int(input('Enter a number: '))
+    if n == 0:
+        print('Enter the value of n greater than 0.')
+        continue
+    print(f"{n}'th Fibonacci number is {fib(n)}")
+    t -= 1
+```
+
+### Question 49:
+
+Find n'th factorial number using recursion.
+
+Solution:
+def fact(n):
+    if n == 0: return 1
+    return n * fact(n - 1)
+
+t = int(input('Enter test case: '))
+while t > 0:
+    n = int(input('Enter a number: '))
+    print(f"{n}'th factorial number is: {fact(n)}")
+    t -= 1
 ```
