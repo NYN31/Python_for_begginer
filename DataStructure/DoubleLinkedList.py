@@ -24,6 +24,17 @@ class DoubleLinkedList:
             self.tail = node # new tail node
             self.size += 1
 
+    def add_front(self, val):
+        node = Node(val)
+        if self.tail is None:
+            self.head = node
+            self.tail = node
+            self.size += 1
+        else:
+            node.next = self.head
+            self.head = node
+            self.size += 1
+
     def __remove_node(self, node):
             if node.prev is None:
                 self.head = node.next
@@ -46,11 +57,23 @@ class DoubleLinkedList:
 
     def pop_back(self):
         if self.tail is not None:
+            last = self.tail.val
             self.__remove_node(self.tail)
+            return last
 
     def pop_front(self):
         if self.head is not None:
+            first = self.head.val
             self.__remove_node(self.head)
+            return first
+    
+    def peek_back(self):
+        if self.tail is not None:
+            return self.tail.val
+    
+    def peek_front(self):
+        if self.head is not None:
+            return self.head.val
 
     def reverse(self):
         vals = []
@@ -99,7 +122,18 @@ class DoubleLinkedList:
 # reverse()
 # count()
 # find()
+# peek_back()
+# peek_front()
+
 # size
 
-myList = DoubleLinkedList()
+my_list = DoubleLinkedList()
+# my_list.add(1)
+# my_list.add(3)
+# my_list.add(7)
+# my_list.add(5)
+# my_list.add(2)
+# print(my_list)
+# my_list.add_front(334)
+# print(my_list)
 
