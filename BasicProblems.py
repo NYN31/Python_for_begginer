@@ -4,8 +4,7 @@ Write a program which will find all such numbers which are divisible by 7 but ar
 
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-```jsx
-Solution 1:
+Solution:
 
 lo = 1
 hi = 1000
@@ -14,7 +13,7 @@ for x in range(lo, hi + 1) :
     if x % 7 == 0 and x % 5 != 0:
         print(x, end=',')
 
-Solution 2:
+Solution:
 
 lo = 1
 hi = 1000
@@ -25,7 +24,7 @@ for i in range(lo, hi + 1):
         l.append(str(i))
 
 print(','.join(l))
-```
+
 
 ### Question 02:
 
@@ -38,7 +37,8 @@ Input: 10
 
 Output: 3628800
 
-```jsx
+solution:
+
 def factorial(x):
     if x == 0:
         return 1;
@@ -46,7 +46,7 @@ def factorial(x):
 
 x = int(input('Enter a number: '))
 print(factorial(x))
-```
+
 
 ### Question 03:
 
@@ -56,13 +56,14 @@ Input: 5
 
 Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
-```python
+solution:
+
 n = int(input())
 dictonary = {}
 for i in range(1, n + 1):
     dictonary[i] = i * i;
 print(dictonary)
-```
+
 
 ### Question 04:
 
@@ -76,13 +77,14 @@ output:
 
 (1, 2, 3, 4, 5, 6)
 
-```python
+solution:
+
 values=input()
 l=values.split(", ")
 t=tuple(l)
 print(l)
 print(t)
-```
+
 
 ### Question 05:
 
@@ -96,7 +98,8 @@ print the answer with comma-separated sequence.
 Input: 10,19,21
 Output: 4,6,6
 
-```python
+Solution:
+
 import math
 
 A = 10
@@ -107,7 +110,7 @@ for B in B_list:
     b = str(int(round(math.sqrt((2.0 * A * B) / C))))
     ans.append(b)
 print(','.join(ans))
-```
+
 
 ### Question 06:
 
@@ -115,7 +118,7 @@ You are given two number n and m. You have to made a 2D matrix where each index 
 
 constraints: 0 ≤ i ≤ n, 0 ≤ j ≤ m
 
-```python
+Solution:
 n, m = map(int, input("Enter the value of n & m: ").split())
 matrix = [[0 for col in range(m)] for row in range(n)]
 
@@ -140,23 +143,23 @@ for i in range(rows):
     row.append(col)
 for i in range(rows):
     print(row[i])
-```
+
 
 ### Question 07:
 
 Write a program that accepts a comma separated sequence of words as input and prints the words in a comma-separated sequence after sorting them alphabetically.
 
-```python
+Solution:
 words = list(map(str, input("Enter words: ").split(',')))
 words.sort()
 print(','.join(words))
-```
+
 
 ### Question 08:
 
 Write a program that accepts sequence of lines as input and prints the lines after making all characters in the sentence capitalized.
 
-```python
+Solution:
 lines = []
 while True:
     print(f"If you want to break, press only b: ", end='')
@@ -171,7 +174,7 @@ for line in lines:
 
 Write a program that accepts a sequence of whitespace separated words as input and prints the words after removing all duplicate words and sort them alphanumerically.
 
-```python
+Solution:
 words = list(map(str, input().split()))
 uniques = []
 for word in words:
@@ -191,7 +194,7 @@ print(" ".join(sorted(list(set(words))))
 
 Write a program which accepts a sequence of comma separated 4 digit binary numbers as its input and then check whether the decimal of the binary numbers are divisible by 5 or not. The numbers that are divisible by 5 are to be printed in a comma separated sequence.
 
-```python
+Solution:
 answer = []
 numbers_in_binary = [x for x in input().split(',')]
 for number in numbers_in_binary:
@@ -208,7 +211,7 @@ Write a program, which will find all numbers between 100 and 300 (both included)
 
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-```python
+Solution:
 even = []
 lo = 100
 hi = 301
@@ -228,7 +231,7 @@ print(','.join(even))
 
 Write a program that accepts a sentence and calculate the number of letters and digits.
 
-```python
+Solution:
 sequence = input("Enter a sequence: ")
 letters = 0
 digits = 0
@@ -246,7 +249,7 @@ print(f"Letters: {letters} \nDigits: {digits}")
 
 Write a program that accepts a sentence and calculate the number of upper case and lower case letters.
 
-```python
+Solution:
 sequence = input("Enter a sequence: ")
 upper_case = 0
 lower_case = 0
@@ -264,7 +267,7 @@ print(f"UpperCase: {upper_case} \nLowerCase: {lower_case}")
 
 Write a program that computes the value of a + aa + aaa + aaaa with a given digit as the value of a.
 
-```python
+Solution:
 a = input()
 n1 = int( "%s" % a )
 n2 = int( "%s%s" % (a, a) )
@@ -297,7 +300,7 @@ Output:
 
 Net amount: 500
 
-```python
+Solution:
 netAmount = 0
 
 while True:
@@ -342,7 +345,7 @@ Output:
 
 [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
 
-```python
+Solution:
 from operator import itemgetter
 
 all_tuple = []
@@ -393,7 +396,7 @@ or: 2
 
 to: 1
 
-```python
+Solution:
 frequency = {}
 
 line = input().split(' ')
@@ -410,7 +413,7 @@ for word in words:
 
 Write a method which can calculate square value of number.
 
-```python
+Solution:
 def square(num):
     return num ** 2
 
@@ -422,7 +425,7 @@ print(square(num))
 
 Define a class, which have a class parameter and have a same instance parameter.
 
-```python
+Solution:
 class Person:
     # Define the class parameter "name"
     name = "Person"
@@ -443,7 +446,7 @@ print("%s name is %s" % (Person.name, nico.name))
 
 Define a function that can receive two numbers in string form and compute their sum and then print it in console.
 
-```python
+Solution:
 def print_sum(num1, num2):
     print(int(num1) + int(num2))
 
@@ -454,7 +457,7 @@ print_sum("3","4")
 
 Define a function that can accept two strings as input and print the string with maximum length in console. If two strings have the same length, then the function should print both strings.
 
-```python
+Solution:
 def check_string(s1, s2):
     len1 = len(s1)
     len2 = len(s2)
@@ -474,7 +477,7 @@ check_string("karim", "rahim")
 
 Define a function that can accept an integer number as input and print "It is an even number" if the number is even, otherwise print "It is an odd number".
 
-```python
+Solution:
 def check_odd_even(num):
     if num & 1:  # can check with num % 2 == 1 also
         print(f"{num} is odd number")
@@ -493,7 +496,7 @@ check_odd_even(8)
 
 Define a function which can generate a dictionary where the keys are numbers between 1 and 20 (both included) and the values are square of keys. The function should print the keys and values separately.
 
-```python
+Solution:
 def square_dictionary():
     dictionary = {}
     for i in range(1, 21):
@@ -523,7 +526,7 @@ Define a function which can generate a list where the values are prime number be
 2. The last 5 primes in the list.
 3. All values except the first 5 primes in the list.
 
-```python
+Solution:
 import math
 
 def is_prime(num):
@@ -556,7 +559,7 @@ Define a function which can generate a tuple of fibonacci number between 1 and 2
 2. The last 5 primes in the tuple.
 3. All values except the first 5 primes in the tuple.
 
-```python
+Solution:
 def tuple_of_fibonacci(hi):
     fibonacci_list = [0, 1, 1] # first three numbers of Fibonacci list
     for i in range(3, hi + 1):
@@ -574,7 +577,7 @@ print(f"All values except the first 5 fibonacci are: {all_fibonacci[5:]}")
 
 Write a program which can filter even and odd numbers in a list by using filter function separately.
 
-```python
+Solution:
 def fun(var):
     if var % 2 == 0:
         return True
@@ -596,7 +599,7 @@ print(list(result2))
 
 Write a program which can map() to make a list whose elements are square.
 
-```python
+Solution:
 li = list(map(int, input('Enter a list: ').split()))
 squaredNumbers = map(lambda x: x**2, li)
 print(f"Answer: {list(squaredNumbers)}")
@@ -606,7 +609,7 @@ print(f"Answer: {list(squaredNumbers)}")
 
 Write a program which can map() and filter() to make a list whose elements are square of even number.
 
-```python
+Solution:
 li = list(map(int, input('Enter a list: ').split()))
 squaredNumbers = map(lambda x: x**2, filter(lambda x: x % 2 == 0, li))
 print(list(squaredNumbers))
@@ -620,7 +623,7 @@ getString: to get a string from console input
 
 printString: to print the string in upper case.
 
-```python
+Solution:
 class InputOutputString(object):
     def __init__(self):
         self.s = ""
@@ -640,7 +643,7 @@ strObj.printString()
 
 Define a class named American which has a static method called printNationality.
 
-```python
+Solution:
 class American(object):
     @staticmethod
     def printNationality():
@@ -655,7 +658,7 @@ American.printNationality()
 
 Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area.
 
-```python
+Solution:
 class Circle(object):
     def __init__(self, r):
         self.radius = r
@@ -671,7 +674,7 @@ print circle.area()
 
 Define a class named Rectangle which can be constructed by a length and width. The Rectangle class has a method which can compute the area.
 
-```python
+Solution:
 class Rectangle(object):
     def __init__(self, length, width):
         self.length = length
@@ -688,7 +691,7 @@ print(rectangle.area())
 
 Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
 
-```python
+Solution:
 class Shape(object):
     def __init__(self):
         pass
@@ -712,7 +715,7 @@ print(square.area())
 
 You are given n. Write a program which compute 1/1+1/2+1/3+...+1/n, where (n > 0)
 
-```python
+Solution:
 n=int(input())
 sum=0.0
 for i in range(1, n+1):
@@ -728,7 +731,7 @@ f(n) = f(n - 1) + 100 when n>0
 
 and f(0) = 1
 
-```python
+Solution:
 def f(n):
     if n == 0: return 0
     else: return f(n - 1) + 100
@@ -757,7 +760,7 @@ Then, the output of the program should be:
 
 0,1,1,2,3,5,8,13
 
-```python
+Solution:
 def f(n):
     if n == 0: return 0
     elif n == 1: return 1
@@ -772,7 +775,7 @@ print(",".join(values))
 
 Please write assert statements to verify that every number in the list [2,4,6,8] is even.
 
-```python
+Solution:
 li = [2,4,6,8]
 for i in li:
     assert i%2==0
@@ -786,7 +789,7 @@ Input: 2 + (7 - 1) * 5 - 4
 
 Output: 28
 
-```python
+Solution:
 expression = input()
 print(eval(expression))
 ```
@@ -795,7 +798,7 @@ print(eval(expression))
 
 Please write a binary search function which searches an item in a sorted list. The function should return the index of element to be searched in the list.
 
-```python
+Solution:
 import math
 
 def binary_search(_arr, element):
@@ -824,7 +827,7 @@ print(binary_search(arr, 20))
 
 Please write a program to output a random even number between 0 and 10 inclusive using random module and list comprehension.
 
-```python
+Solution:
 import random
 print(random.choice([i for i in range(11) if i % 2 == 0]))
 ```
@@ -833,7 +836,7 @@ print(random.choice([i for i in range(11) if i % 2 == 0]))
 
 Please write a program to output a random number, which is divisible by 5 and 7, between 0 and 100 inclusive using random module and list comprehension.
 
-```python
+Solution:
 import random
 print(random.choice([i for i in range(101) if i % 5 == 0 and i % 7 == 0]))
 ```
@@ -842,7 +845,7 @@ print(random.choice([i for i in range(101) if i % 5 == 0 and i % 7 == 0]))
 
 Please write a program to generate a list with 5 even random numbers between 100 and 200 inclusive.
 
-```python
+Solution:
 import random
 print(random.sample([i for i in range(100, 200) if i % 2 == 0], 5))
 ```
@@ -851,7 +854,7 @@ print(random.sample([i for i in range(100, 200) if i % 2 == 0], 5))
 
 Please write a program to randomly print a integer number between 7 and 15 inclusive.
 
-```python
+Solution:
 import random
 print(random.randrange(1, 100))
 ```
@@ -860,7 +863,7 @@ print(random.randrange(1, 100))
 
 With a given list [12,24,35,24,88,120,155,88,120,155], write a program to print this list after removing all duplicate values with original order reserved.
 
-```python
+Solution:
 def removeDuplicate(li):
     newli = []
     seen = set()

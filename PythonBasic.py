@@ -16,7 +16,7 @@ age = present_year - birth_year + 1
 print(f"Your age is: {age}")
 # problem : You are given a weight in pound(lbs) and you have to convert it in kilograms
 weight_lbs = float(input('Weight (lbs): '))
-weight_kg = weight_lbs * 0.45;
+weight_kg = weight_lbs * 0.45
 print(weight_kg)
 # problem : calculate the expression x = (10 / 2 + 3) * 5 * 2 ^ 4 and print the result
 x = (10 / 2 + 3) * 5 * 2 ** 4
