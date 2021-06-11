@@ -44,18 +44,18 @@ class Deque:
         return self.__list.size
 
 
-deque = Deque()
-deque.push_back(5)
-deque.push_back(2)
-deque.push_back(8)
-deque.push_back(6)
-
-deque.push_front(11)
-
-print(deque.peek_front())
-print(deque.peek_back())
-
-print(len(deque))
-print(deque.pop_back())
-print(deque.pop_front())
-print(len(deque))
+# deque = Deque()
+# deque.push_back(5)
+# deque.push_back(2)
+# deque.push_back(8)
+# deque.push_back(6)
+#
+# deque.push_front(11)
+#
+# print(deque.peek_front())
+# print(deque.peek_back())
+#
+# print(len(deque))
+# print(deque.pop_back())
+# print(deque.pop_front())
+# print(len(deque))

@@ -28,14 +28,14 @@ class Queue:
         return self.__list.size
 
 
-queue = Queue()
-queue.enqueue(2)
-queue.enqueue(6)
-queue.enqueue(3)
-queue.enqueue(8)
-queue.enqueue(4)
-
-print(len(queue))
-print(queue.peek_front())
-print(queue.deque())
-print(queue.peek_front())
+# queue = Queue()
+# queue.enqueue(2)
+# queue.enqueue(6)
+# queue.enqueue(3)
+# queue.enqueue(8)
+# queue.enqueue(4)
+#
+# print(len(queue))
+# print(queue.peek_front())
+# print(queue.deque())
+# print(queue.peek_front())

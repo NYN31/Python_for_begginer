@@ -127,7 +127,7 @@ class DoubleLinkedList:
 
 # size
 
-my_list = DoubleLinkedList()
+# my_list = DoubleLinkedList()
 # my_list.add(1)
 # my_list.add(3)
 # my_list.add(7)

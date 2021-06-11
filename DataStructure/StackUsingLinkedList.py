@@ -28,14 +28,14 @@ class Stack:
         return self.__list.size
 
 
-stack = Stack()
-stack.push(5)
-stack.push(2)
-stack.push(8)
-stack.push(6)
-
-print(stack.peek_top())
-print(len(stack))
-val = stack.pop()
-print(val)
-print(len(stack))
+# stack = Stack()
+# stack.push(5)
+# stack.push(2)
+# stack.push(8)
+# stack.push(6)
+#
+# print(stack.peek_top())
+# print(len(stack))
+# val = stack.pop()
+# print(val)
+# print(len(stack))
